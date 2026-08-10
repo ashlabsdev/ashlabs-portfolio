@@ -115,19 +115,9 @@ src
 └── main.tsx
 ```
 
-## Design System
+---
 
-The portfolio uses a custom dark design system built around a minimal color palette.
-
-### Primary
-
-```text
-Primary:       #00F48E
-Primary Hover: #00D97E
-```
-
-
-#License
+## License
 
 This project is currently maintained as a private AshLabs portfolio project.
 All branding, content, images, and project materials are property of AshLabs unless otherwise stated.
