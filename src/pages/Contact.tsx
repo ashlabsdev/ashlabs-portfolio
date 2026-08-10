@@ -1,3 +1,13 @@
+import ContactHero from "../components/sections/contact/ContactHero";
+import ContactForm from "../components/sections/contact/ContactForm";
+import FAQ from "../components/sections/contact/FAQ";
+
 export default function Contact() {
-    return <h1>Contact</h1>;
+  return (
+    <>
+      <ContactHero />
+      <ContactForm />
+      <FAQ />
+    </>
+  );
 }

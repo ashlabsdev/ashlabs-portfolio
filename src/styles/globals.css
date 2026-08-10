@@ -56,3 +56,8 @@ body {
   animation: float 4s ease-in-out infinite;
 
 }
+
+select option {
+  background: var(--card);
+  color: var(--text);
+}
