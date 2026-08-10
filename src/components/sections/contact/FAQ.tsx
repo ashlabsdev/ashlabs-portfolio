@@ -6,7 +6,7 @@ import { contact } from "../../../data/contact";
 
 export default function FAQ() {
   return (
-    <Section>
+    <Section className="pt-0">
 
       <Heading
         title="Frequently Asked Questions"

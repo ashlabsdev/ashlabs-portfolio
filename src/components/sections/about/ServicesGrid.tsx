@@ -6,7 +6,7 @@ import { services } from "../../../data/services";
 
 export default function ServicesGrid() {
   return (
-    <Section id="services">
+    <Section id="services" className="pt-8 pb-0">
         <Heading
           title="What We Build"
           subtitle=""

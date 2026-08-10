@@ -8,7 +8,7 @@ import { about } from "../../../data/about";
 
 export default function AboutCTA() {
   return (
-    <Section>
+    <Section id="contact" className="pt-8 pb-0">
         <div className="rounded-3xl border border-[var(--border)] bg-[var(--surface)] px-8 py-16 text-center">
 
           <Heading

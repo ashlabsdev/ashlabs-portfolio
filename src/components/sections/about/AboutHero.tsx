@@ -8,14 +8,14 @@ import { NavLink } from "react-router-dom";
 
 export default function AboutHero() {
     return (
-        <Section>
+        <Section className="pt-8 pb-0">
             <div className="grid min-h-screen items-center gap-20 lg:grid-cols-2">
 
                 {/* LEFT */}
 
                 <div className="flex flex-col">
 
-                    <Badge text="ABOUT ASHLABS" />
+                    <Badge text="ABOUT US" />
 
                     <h1 className="mt-8 max-w-3xl font-heading text-4xl font-bold leading-tight md:text-5xl">
                         {about.title}
@@ -32,29 +32,6 @@ export default function AboutHero() {
                             </Button>
                         </NavLink>
                     </div>
-
-                    {/* Scroll */}
-
-                    {/* <div
-                        onClick={() =>
-                            document
-                                .getElementById("services")
-                                ?.scrollIntoView({
-                                    behavior: "smooth",
-                                    block: "start",
-                                })
-                        }
-                        className="mt-16 flex cursor-pointer items-center gap-3"
-                    >
-
-                        <div className="h-10 w-px bg-[var(--primary)] animate-pulse" />
-
-                        <span className="text-sm text-[var(--muted)] hover:text-[var(--primary)]">
-                            Scroll to explore
-                        </span>
-
-                    </div> */}
-
                 </div>
 
                 {/* RIGHT */}

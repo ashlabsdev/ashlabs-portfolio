@@ -6,7 +6,7 @@ import { process } from "../../../data/process";
 
 export default function Process() {
     return (
-        <Section>
+        <Section className="pt-18 pb-0">
             <Heading
                 title="Our Process"
                 subtitle=""

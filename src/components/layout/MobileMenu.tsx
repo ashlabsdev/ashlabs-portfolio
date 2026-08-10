@@ -9,41 +9,69 @@ export default function MobileMenu() {
 
   return (
     <>
+      {/* Menu Button */}
+
       <button
-        onClick={() => setOpen(true)}
-        className="lg:hidden"
+        type="button"
+        onClick={() => setOpen((prev) => !prev)}
+        className="
+          flex
+          items-center
+          justify-center
+          rounded-lg
+          p-2
+          text-white
+          transition
+          hover:text-[var(--primary)]
+          lg:hidden
+        "
+        aria-label={open ? "Close menu" : "Open menu"}
       >
-        <Menu size={28} />
+        {open ? <X size={26} /> : <Menu size={26} />}
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-50 bg-black">
-          <div className="flex justify-end p-6">
-            <button onClick={() => setOpen(false)}>
-              <X size={28} />
-            </button>
-          </div>
+      {/* Dropdown */}
 
-          <div className="mt-16 flex flex-col items-center gap-8">
+      {open && (
+        <div
+          className="
+            absolute
+            left-0
+            top-full
+            z-50
+            w-full
+            border-t
+            border-white/10
+            bg-black
+            px-6
+            py-8
+            shadow-xl
+            lg:hidden
+          "
+        >
+          <nav className="flex flex-col items-center gap-7">
             {navigation.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
                 onClick={() => setOpen(false)}
-                className="text-2xl"
+                className={({ isActive }) =>
+                  `
+                    text-lg
+                    font-medium
+                    transition-colors
+                    ${
+                      isActive
+                        ? "text-[var(--primary)]"
+                        : "text-white hover:text-[var(--primary)]"
+                    }
+                  `
+                }
               >
                 {item.label}
               </NavLink>
             ))}
-
-            <NavLink
-              to="/contact"
-              onClick={() => setOpen(false)}
-              className="mt-6 rounded-xl bg-[#00F48E] px-6 py-3 font-semibold text-black"
-            >
-              Let's Talk
-            </NavLink>
-          </div>
+          </nav>
         </div>
       )}
     </>

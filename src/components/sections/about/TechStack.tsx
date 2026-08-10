@@ -6,7 +6,7 @@ import { technologies } from "../../../data/technologies";
 
 export default function TechStack() {
   return (
-    <Section>
+    <Section className="pt-18 pb-0">
         <Heading
           title="Technology Stack"
           subtitle=""
