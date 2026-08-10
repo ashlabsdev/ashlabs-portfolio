@@ -1,77 +1,133 @@
-# React + TypeScript + Vite
+# AshLabs — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website for **AshLabs**, showcasing our work, services, technology stack, and ways to get in touch.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** https://work.ashlabs.in
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## About
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+AshLabs is a software development initiative focused on building modern, practical, and scalable digital solutions.
 
-Note: This will impact Vite dev & build performances.
+This portfolio serves as the public-facing showcase for our work, including:
 
-## Expanding the ESLint configuration
+- Websites
+- Web applications
+- Custom software solutions
+- Mobile applications
+- Progressive Web Apps (PWAs)
+- AI-powered solutions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Responsive design for desktop, tablet, and mobile
+- Modern dark-themed UI
+- Reusable React components
+- Project showcase
+- Services overview
+- Technology stack
+- Client testimonials
+- Contact enquiry form
+- WhatsApp contact option
+- FAQ section
+- Responsive mobile navigation
+- Client-side form validation
+- Email enquiry integration using EmailJS
+- SEO-friendly page structure
+- Custom favicon and branding
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+
+### UI & Icons
+
+- Lucide React
+- Custom reusable UI components
+- Responsive design system
+
+### Services
+
+- EmailJS for contact enquiries
+
+### Deployment
+
+- Vercel
+- GitHub
+- Custom domain
+
+---
+
+## Project Structure
+
+```text
+src
+│
+├── assets
+│
+├── components
+│   ├── layout
+│   │
+│   ├── sections
+│   │   ├── home
+│   │   ├── about
+│   │   ├── projects
+│   │   └── contact
+│   │
+│   └── ui
+│       ├── Badge.tsx
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       ├── Container.tsx
+│       ├── Divider.tsx
+│       ├── FormField.tsx
+│       ├── Heading.tsx
+│       ├── Input.tsx
+│       ├── Pill.tsx
+│       ├── Section.tsx
+│       ├── Select.tsx
+│       ├── Tag.tsx
+│       └── TextArea.tsx
+│
+├── data
+│
+├── layouts
+│
+├── pages
+│
+├── router
+│
+├── services
+│
+├── styles
+│
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Design System
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The portfolio uses a custom dark design system built around a minimal color palette.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Primary
 
+```text
+Primary:       #00F48E
+Primary Hover: #00D97E
 ```
+
+
+#License
+
+This project is currently maintained as a private AshLabs portfolio project.
+All branding, content, images, and project materials are property of AshLabs unless otherwise stated.
