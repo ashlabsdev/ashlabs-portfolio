@@ -1,13 +1,4 @@
-// export default function Footer() {
-//   return (
-//     <footer className="border-t border-white/10 py-10 text-center text-gray-500">
-//       © 2026 AshLabs. All rights reserved.
-//     </footer>
-//   );
-// }
-
-
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaMedium, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -31,6 +22,36 @@ export default function Footer() {
           className="transition-colors hover:text-white"
         >
           <FaLinkedin size={20} />
+        </a>
+
+        <a
+          href="https://www.instagram.com/ashlabs.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="transition-colors hover:text-white"
+        >
+          <FaInstagram size={20} />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@ashlabsdev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+          className="transition-colors hover:text-white"
+        >
+          <FaYoutube size={20} />
+        </a>
+
+        <a
+          href="https://medium.com/@ashlabs.office"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Medium"
+          className="transition-colors hover:text-white"
+        >
+          <FaMedium size={20} />
         </a>
       </div>
 
