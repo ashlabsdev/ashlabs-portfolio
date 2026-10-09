@@ -2,6 +2,7 @@ import project1 from "../assets/images/projects/a2r1.webp";
 import project2 from "../assets/images/projects/lms.webp";
 import project3 from "../assets/images/projects/rafoPic.png";
 import project4 from "../assets/images/projects/sellx_.png";
+import project5 from "../assets/images/projects/nelo_.webp";
 
 export interface Project {
   name: string;
@@ -11,6 +12,12 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    name: "Nelo - Social Media Platform",
+    client: "DriveX Pvt. Ltd.",
+    image: project5,
+    link: "https://nelo.ashlabs.in",
+  },
   {
     name: "SellX - Buy & Sell Platform",
     client: "DriveX Pvt. Ltd.",
